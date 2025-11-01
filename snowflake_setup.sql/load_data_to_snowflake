@@ -1,0 +1,10 @@
+-- KODE INI UNTUK DIJALANKAN DI SNOWSQL (CMD) --
+snowsql -a account_identifier -u username
+Password:
+-- A. UPLOAD FILE DARI LOKAL KE STAGE
+PUT 'file://G:/Portofolio/Project Data Engineering Netflix/movie.csv' @%MOVIES;
+PUT 'file://G:/Portofolio/Project Data Engineering Netflix/ratings.csv' @%RATINGS;
+PUT 'file://G:/Portofolio/Project Data Engineering Netflix/tags.csv' @%TAGS;
+PUT 'file://G:/Portofolio/Project Data Engineering Netflix/links.csv' @%LINKS;
+PUT 'file://G:/Portofolio/Project Data Engineering Netflix/genome-tags.csv' @%GENOME_TAGS;
+PUT 'file://G:/Portofolio/Project Data Engineering Netflix/genome-scores.csv' @%GENOME_SCORES;
