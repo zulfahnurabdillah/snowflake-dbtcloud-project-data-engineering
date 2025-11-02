@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: NETFLIX_PROJECT # Nama sumber (terserah Anda)
+    database: NETFLIX_DATASET # Database Snowflake Anda
+    schema: RAW                # Schema tempat data mentah berada
+    tables:
+      - name: MOVIES
+      - name: RATINGS
+      - name: TAGS
+      - name: LINKS
+      - name: GENOME_SCORES
+      - name: GENOME_TAGS
