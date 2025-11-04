@@ -18,10 +18,11 @@ select
     m.movie_id,
     m.title,
     m.release_year,
-    l.imdb_id,  -- Data tambahan dari stg_links
-    l.tmdb_id   -- Data tambahan dari stg_links
+    l.imdb_id,  
+    l.tmdb_id   
 
 from stg_movies as m
 
 left join stg_links as l
+
     on m.movie_id = l.movie_id
